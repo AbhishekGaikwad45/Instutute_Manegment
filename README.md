@@ -1,7 +1,8 @@
 Institute Management System
-<img width="1920" height="1080" alt="Screenshot 2025-11-30 230907" src="https://github.com/user-attachments/assets/1716565f-1c49-46cf-b4e1-f058ee68af8f" />
-<img width="1920" height="1080" alt="Screenshot 2025-12-01 165744" src="https://github.com/user-attachments/assets/ba62826e-9b98-4a66-8a29-227af12284fd" />
-<img width="1920" height="1080" alt="Screenshot 2025-12-01 164546" src="https://github.com/user-attachments/assets/9e328235-6107-4b0d-89b4-d8841609580b" />
+
+![counseller Dashboard](https://github.com/user-attachments/assets/8ea06cf0-d91c-4b35-8457-fdb615c1ce11)
+![Faculty Dashboard](https://github.com/user-attachments/assets/7c2525fe-c660-4f9b-8fce-6eb04d242955)
+![Student Dashboard](https://github.com/user-attachments/assets/290e900f-f234-497d-892c-8097d5a72c14)
 
 
 A full-stack Spring Boot + React web application for managing students, faculty, batches, attendance, and payments in an institute. The system includes role-based login, CRUD operations, and a clean REST API.
