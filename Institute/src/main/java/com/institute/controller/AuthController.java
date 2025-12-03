@@ -61,9 +61,9 @@ public class AuthController {
                 "error", result
         ));
     }
-    // -----------------------------------------------------------
-    // ⭐ LOGIN FOR COUNSELOR ONLY (EMAIL + PASSWORD)
-    // -----------------------------------------------------------
+   
+     LOGIN FOR COUNSELOR ONLY (EMAIL + PASSWORD)
+    
     @PostMapping("/counselor-login")
     public ResponseEntity<?> counselorLogin(@RequestBody User user) {
 
@@ -83,9 +83,9 @@ public class AuthController {
     }
 
 
-    // -----------------------------------------------------------
-    // ⭐ SEND EMAIL OTP FOR STUDENT + FACULTY
-    // -----------------------------------------------------------
+  
+     // SEND EMAIL OTP FOR STUDENT + FACULTY
+   
     @PostMapping("/send-email-otp")
     public ResponseEntity<?> sendEmailOtp(@RequestBody Map<String, String> req) {
 
@@ -126,9 +126,9 @@ public class AuthController {
 
 
 
-    // -----------------------------------------------------------
-    // ⭐ VERIFY OTP AND RETURN USER + ROLE
-    // -----------------------------------------------------------
+    
+    // VERIFY OTP AND RETURN USER + ROLE
+    
     @PostMapping("/verify-email-otp")
     public ResponseEntity<?> verifyEmailOtp(@RequestBody Map<String, String> req) {
 
