@@ -41,9 +41,9 @@ public class BatchController {
 
 
 
-    // -------------------------------------------
+    
     // CREATE BATCH
-    // -------------------------------------------
+    
     @PostMapping("/add")
     public ResponseEntity<?> addBatch(@RequestBody Batch batch) {
         Batch saved = service.saveBatch(batch);
@@ -51,18 +51,18 @@ public class BatchController {
     }
 
 
-    // -------------------------------------------
+    
     // GET ALL BATCHES
-    // -------------------------------------------
+   
     @GetMapping("/all")
     public ResponseEntity<List<Batch>> getAllBatches() {
         return ResponseEntity.ok(service.getAllBatches());
     }
 
 
-    // -------------------------------------------
+    
     // GET BATCH BY batchCode
-    // -------------------------------------------
+   
     @GetMapping("/code/{batchCode}")
     public ResponseEntity<?> getBatchByCode(@PathVariable String batchCode) {
 
@@ -87,9 +87,9 @@ public class BatchController {
 
 
 
-    // -------------------------------------------
+   
     // UPDATE BATCH BY batchCode
-    // -------------------------------------------
+  
     @PutMapping("/update/{batchCode}")
     public ResponseEntity<?> updateBatch(
             @PathVariable String batchCode,
@@ -104,9 +104,9 @@ public class BatchController {
     }
 
 
-    // -------------------------------------------
+   
     // DELETE BATCH BY batchCode
-    // -------------------------------------------
+   
     @DeleteMapping("/delete/{batchCode}")
     public ResponseEntity<?> deleteBatch(@PathVariable String batchCode) {
 
@@ -119,9 +119,9 @@ public class BatchController {
     }
 
 
-    // -------------------------------------------
+   
     // ASSIGN FACULTY USING batchCode
-    // -------------------------------------------
+    
     @PostMapping("/assign-faculty")
     public ResponseEntity<?> assignFaculty(@RequestBody Map<String, String> req) {
 
@@ -138,9 +138,9 @@ public class BatchController {
 
 
 
-    // -------------------------------------------
+    
     // ASSIGN STUDENT USING batchCode
-    // -------------------------------------------
+    
     @PostMapping("/assign-student/{batchCode}")
     public ResponseEntity<?> assignStudentToBatch(
             @PathVariable String batchCode,
@@ -160,9 +160,9 @@ public class BatchController {
     }
 
 
-    // -------------------------------------------
+   
     // GET STUDENTS OF A BATCH BY batchCode
-    // -------------------------------------------
+   
     @GetMapping("/{batchCode}/students")
     public ResponseEntity<?> getStudentsOfBatch(@PathVariable String batchCode) {
 
@@ -184,9 +184,9 @@ public class BatchController {
     }
 
 
-    // -------------------------------------------
+  
     // GET BATCHES BY FACULTY
-    // -------------------------------------------
+    
     @GetMapping("/by-faculty/{facultyId}")
     public ResponseEntity<List<Batch>> getBatchesByFaculty(@PathVariable int facultyId) {
         return ResponseEntity.ok(service.getBatchesByFaculty(facultyId));
